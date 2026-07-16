@@ -16,7 +16,7 @@
     <style>
         .page-header {
             background: #003366;
-            color: #fff;
+            color: white;
             text-align: center;
             padding: 80px 20px;
         }
@@ -25,12 +25,14 @@
             font-size: 42px;
         }
 
+
         .contact-section {
             padding: 70px 8%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
         }
+
 
         .contact-info {
             background: #003366;
@@ -39,48 +41,60 @@
             border-radius: 15px;
         }
 
+
         .contact-info h2 {
             color: #FFD700;
             margin-bottom: 20px;
         }
+
 
         .contact-info p {
             margin: 15px 0;
             line-height: 1.8;
         }
 
+
         .contact-info i {
             color: #FFD700;
             margin-right: 10px;
         }
 
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+
         .contact-form {
-            background: #fff;
+            background: white;
             padding: 35px;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
         }
+
 
         .contact-form h2 {
             color: #003366;
             margin-bottom: 20px;
         }
 
+
         .contact-form input,
         .contact-form textarea {
+
             width: 100%;
             padding: 14px;
             margin-bottom: 18px;
             border: 1px solid #ddd;
             border-radius: 8px;
             font-size: 16px;
+
         }
 
-        .contact-form textarea {
-            resize: vertical;
-        }
 
         .contact-form button {
+
             width: 100%;
             padding: 14px;
             border: none;
@@ -89,29 +103,33 @@
             font-weight: bold;
             border-radius: 8px;
             cursor: pointer;
-            transition: .3s;
+
         }
+
 
         .contact-form button:hover {
+
             background: #003366;
-            color: #fff;
+            color: white;
+
         }
 
-        .map {
-            padding: 0 8% 70px;
+
+        .social a {
+
+            font-size: 25px;
+            margin-right: 15px;
+            color: #FFD700;
+
         }
 
-        .map iframe {
-            width: 100%;
-            height: 450px;
-            border: 0;
-            border-radius: 15px;
-        }
 
         @media(max-width:900px) {
 
             .contact-section {
+
                 grid-template-columns: 1fr;
+
             }
 
         }
@@ -120,14 +138,11 @@
 </head>
 
 <body>
-
     <header>
-
         <nav class="navbar">
-
             <div class="logo">
 
-                <img src="./Images/logo%20(2).jpg" alt="Logo">
+                <img src="./Images/images.jpg" alt="PHM HCC Logo">
 
                 <h2>PHM HCC</h2>
 
@@ -136,21 +151,26 @@
             <ul class="nav-links">
 
                 <li><a href="index.html">Home</a></li>
+
                 <li><a href="about.html">About</a></li>
+
                 <li><a href="leadership.html">Leadership</a></li>
+
                 <li><a href="ministries.html">Ministries</a></li>
+
                 <li><a href="sermons.html">Sermons</a></li>
+
                 <li><a href="gallery.html">Gallery</a></li>
+
                 <li><a href="contact.html">Contact</a></li>
 
             </ul>
-
             <div class="menu">
+
                 <i class="fa fa-bars"></i>
+
             </div>
-
         </nav>
-
     </header>
 
     <section class="page-header">
@@ -162,137 +182,156 @@
     </section>
 
     <section class="contact-section">
-
         <div class="contact-info">
-
             <h2>Church Information</h2>
-
-            <p>
+           <p>
                 <i class="fas fa-map-marker-alt"></i>
-                Mbezi-Magari Saba, Dar es Salaam, Tanzania
-            </p>
 
-            <p>
+                Mbezi-Magari Saba,
+                Dar es Salaam, Tanzania
+
+            </p>
+           <p>
+
                 <i class="fas fa-phone"></i>
-                +255 754 970 421
-            </p>
 
+                <a href="tel:+255754970421">
+
+                    +255 754 970 421
+
+                </a>
+
+            </p>
             <p>
+
                 <i class="fas fa-envelope"></i>
-                info@phmhcc.org
+
+                <a href="mailto:info@phmhcc.org">
+
+                    info@phmhcc.org
+
+                </a>
+
             </p>
 
             <p>
+
                 <i class="fas fa-clock"></i>
-                Sunday Worship : 06:30 AM - 09:30 AM -English Service |
-                09:00 AM - 13:00 PM -Swahili Service
+
+                Sunday Worship:
+
+                <br>
+
+                06:30 AM - 09:30 AM (English Service)
+
+                <br>
+
+                09:00 AM - 01:00 PM (Swahili Service)
+
             </p>
 
             <p>
+
                 <i class="fas fa-clock"></i>
-                Tuesday Service (Bible Study) : 18:30 PM - 20:00 PM
+
+                Tuesday Bible Study:
+
+                <br>
+
+                06:30 PM - 08:00 PM
+
             </p>
 
             <p>
-                <i class="fas fa-clock"></i>
-                Friday Prayer : 18:30 PM - 20:00 PM
-            </p>
 
-            <!-- <h2 style="margin-top:35px;">Follow Us</h2> -->
+                <i class="fas fa-clock"></i>
+
+                Friday Prayer:
+
+                <br>
+
+                06:30 PM - 08:00 PM
+
+            </p>
 
             <div class="social">
+                <a href="https://www.facebook.com/share/14kCi4Q2iXW/" target="_blank" rel="noopener noreferrer">
 
-                <a href="https://www.facebook.com/share/14kCi4Q2iXW/" target="_blank" rel="noopener"
-                    aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
-                </a>
 
-                <a href="https://youtube.com/@pastor-happymacxmkomekwa?si=jhBkVVdFh4fTh8Oy" target="_blank"
-                    rel="noopener" aria-label="YouTube">
+                </a>
+                <a href="https://youtube.com/@pastor-happymacxmkomekwa" target="_blank" rel="noopener noreferrer">
+
                     <i class="fab fa-youtube"></i>
+
                 </a>
 
-                <a href="https://www.instagram.com/pastor_mkomekwa?igsh=eHI1Y3VtbnQ5dTEz" target="_blank" rel="noopener"
-                    aria-label="Instagram">
+                <a href="https://www.instagram.com/pastor_mkomekwa" target="_blank" rel="noopener noreferrer">
+
                     <i class="fab fa-instagram"></i>
+
                 </a>
 
-                <a href="https://wa.me/ +255 754 970 421" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <a href="https://wa.me/255754970421" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i>
+
                 </a>
+
 
             </div>
         </div>
-        <div class="contact-form">
 
+        <div class="contact-form">
             <h2>Send Us a Message</h2>
 
-            <form>
-
-                <input type="text" placeholder="Full Name" required>
-
-                <input type="email" placeholder="Email Address" required>
-
-                <input type="tel" placeholder="Phone Number">
-
-                <input type="text" placeholder="Subject">
-
-                <textarea rows="7" placeholder="Write your message here..." required></textarea>
-
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" rows="7" placeholder="Write your message here..." required></textarea>
                 <button type="submit">
-
                     Send Message
-
                 </button>
-
             </form>
-
         </div>
-
-    </section>
-
-    <!-- <section class="map">
-
-        <iframe src="https://www.google.com/maps?q=Dar+es+Salaam,+Tanzania&output=embed" allowfullscreen=""
-            loading="lazy">
-        </iframe>
-
-    </section> -->
+   </section>
 
     <footer>
-
         <h2>PHM HCC</h2>
-
-        <p>Pentecostal Holiness Mission Hope Christian Church</p>
+        <p>
+            Pentecostal Holiness Mission Hope Christian Church
+        </p>
 
         <div class="social">
+           <a href="https://www.facebook.com/share/14kCi4Q2iXW/" target="_blank" rel="noopener noreferrer">
 
-            <a href="https://www.facebook.com/share/14kCi4Q2iXW/" target="_blank" rel="noopener" aria-label="Facebook">
                 <i class="fab fa-facebook"></i>
-            </a>
 
-            <a href="https://youtube.com/@pastor-happymacxmkomekwa?si=jhBkVVdFh4fTh8Oy" target="_blank" rel="noopener"
-                aria-label="YouTube">
+            </a>
+            <a href="https://youtube.com/@pastor-happymacxmkomekwa" target="_blank" rel="noopener noreferrer">
+
                 <i class="fab fa-youtube"></i>
+
             </a>
 
-            <a href="https://www.instagram.com/pastor_mkomekwa?igsh=eHI1Y3VtbnQ5dTEz" target="_blank" rel="noopener"
-                aria-label="Instagram">
+            <a href="https://www.instagram.com/pastor_mkomekwa" target="_blank" rel="noopener noreferrer">
+
                 <i class="fab fa-instagram"></i>
-            </a>
 
-            <a href="https://wa.me/ +255 754 970 421" target="_blank" rel="noopener" aria-label="WhatsApp">
+            </a>
+            <a href="https://wa.me/255754970421" target="_blank" rel="noopener noreferrer">
+
                 <i class="fab fa-whatsapp"></i>
+
             </a>
-
         </div>
+        <p>
 
-        <p>&copy; 2026 PHM HCC. All Rights Reserved.</p>
+            &copy; 2026 PHM HCC. All Rights Reserved.
 
+        </p>
     </footer>
-
     <script src="./script.js"></script>
-
 </body>
-
 </html>
