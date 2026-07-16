@@ -633,22 +633,33 @@ footer h2{
 }
 
 
-.social a{
-
-    color:white;
-
-    font-size:25px;
-
-    margin:10px;
-
+.social a {
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
+/* Original brand colors */
+.social .fa-facebook {
+    color: #1877F2;
+}
 
+.social .fa-youtube {
+    color: #FF0000;
+}
 
-.social a:hover{
+.social .fa-instagram {
+    color: #E4405F;
+}
 
-    color:#FFD700;
+.social .fa-whatsapp {
+    color: #25D366;
+}
 
+/* Hover effect */
+.social a:hover {
+    transform: scale(1.2);
 }
 
 
