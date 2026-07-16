@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sermons | PHM HCC</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        .page-header {
+            background: #003366;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+        }
+
+        .page-header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .sermon-section {
+            padding: 70px 8%;
+            background: #f8f9fa;
+        }
+
+        .sermon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .sermon-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+            transition: .3s;
+        }
+
+        .sermon-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .sermon-card img {
+            width: 90%;
+            height: 350px;
+            object-fit: fill;
+            margin-left: 18px;
+        }
+
+        .sermon-content {
+            padding: 25px;
+        }
+
+        .sermon-content h3 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        .sermon-content p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .sermon-info {
+            color: #777;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        .btn-read {
+            display: inline-block;
+            background: #FFD700;
+            color: #003366;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn-read:hover {
+            background: #003366;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="../Images/images.jpg" alt="Logo">
+                <h2>PHM HCC</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="page-header">
+
+        <h1>Latest Sermons</h1>
+
+        <p>
+            Be inspired and strengthened through the Word of God.
+        </p>
+
+    </section>
+
+    <section class="sermon-section">
+
+        <div class="sermon-grid">
+
+            <div class="sermon-card">
+
+                <img src="../Images/images.jpg" alt="Faith">
+
+                <div class="sermon-content">
+
+                    <h3>Walking by Faith</h3>
+
+                    <p>
+                        Faith is trusting God completely even when we cannot see
+                        the outcome. Through faith we overcome every challenge.
+                    </p>
+
+                    <div class="sermon-info">
+
+                        <strong>Speaker:</strong> Pastor Happymacx Mkomekwa
+                        <br>
+
+                        <strong>Date:</strong> July 13, 2026
+
+                        <br>
+
+                        <strong>Scripture:</strong> Hebrews 11:1
+
+                    </div>
+
+                    <a href="#" class="btn-read">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sermon-card">
+
+                <img src="../Images/images.jpg" alt="Prayer">
+
+                <div class="sermon-content">
+
+                    <h3>The Power of Prayer</h3>
+
+                    <p>
+                        Prayer connects us with God. It strengthens our faith,
+                        brings peace, and opens the door for God's intervention.
+                    </p>
+
+                    <div class="sermon-info">
+
+                        <strong>Speaker:</strong> Elder Kikoti
+                        <br>
+
+                        <strong>Date:</strong> July 6, 2026
+
+                        <br>
+
+                        <strong>Scripture:</strong> James 5:16
+
+                    </div>
+
+                    <a href="#" class="btn-read">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sermon-card">
+
+                <img src="../Images/images.jpg" alt="Love">
+
+                <div class="sermon-content">
+
+                    <h3>Living in God's Love</h3>
+
+                    <p>
+                        God's love transforms hearts and teaches us to forgive,
+                        serve others, and walk in unity with one another.
+                    </p>
+
+                    <div class="sermon-info">
+
+                        <strong>Speaker:</strong> Elder Mkole
+
+                        <br>
+
+                        <strong>Date:</strong> June 29, 2026
+
+                        <br>
+
+                        <strong>Scripture:</strong> 1 John 4:7-8
+
+                    </div>
+
+                    <a href="#" class="btn-read">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sermon-card">
+
+                <img src="../Images/images.jpg" alt="Hope">
+
+                <div class="sermon-content">
+
+                    <h3>Hope in Christ</h3>
+
+                    <p>
+                        Jesus Christ gives us hope for today and eternity. His
+                        promises never fail and His grace is always sufficient.
+                    </p>
+
+                    <div class="sermon-info">
+
+                        <strong>Speaker:</strong>Pastor Happymacx Mkomekwa
+
+                        <br>
+
+                        <strong>Date:</strong> June 22, 2026
+
+                        <br>
+
+                        <strong>Scripture:</strong> Romans 15:13
+
+                    </div>
+
+                    <a href="#" class="btn-read">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sermon-card">
+
+                <img src="../Images/images.jpg" alt="Salvation">
+
+                <div class="sermon-content">
+
+                    <h3>Gift of Salvation</h3>
+
+                    <p>
+                        Salvation is God's free gift through Jesus Christ. It
+                        brings forgiveness, eternal life, and new hope.
+                    </p>
+
+                    <div class="sermon-info">
+
+                        <strong>Speaker:</strong> Pastor Happymacx Mkomekwa
+                        <br>
+
+                        <strong>Date:</strong> June 15, 2026
+
+                        <br>
+
+                        <strong>Scripture:</strong> John 3:16
+
+                    </div>
+
+                    <a href="#" class="btn-read">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sermon-card">
+
+                <img src="../Images/images.jpg" alt="Holy Spirit">
+
+                <div class="sermon-content">
+
+                    <h3>Walking with the Holy Spirit</h3>
+
+                    <p>
+                        The Holy Spirit guides believers, gives wisdom,
+                        strengthens faith, and empowers us for ministry.
+                    </p>
+
+                    <div class="sermon-info">
+
+                        <strong>Speaker:</strong> Pastor Happymacx Mkomekwa
+
+                        <br>
+
+                        <strong>Date:</strong> June 8, 2026
+
+                        <br>
+
+                        <strong>Scripture:</strong> Galatians 5:25
+
+                    </div>
+
+                    <a href="#" class="btn-read">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h2>PHM HCC</h2>
+
+        <p>Pentecostal Holiness Mission Hope Christian Church</p>
+
+        <div class="social">
+
+            <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <p>&copy; 2026 PHM HCC. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="../JS/script.js"></script>
+
+</body>
+
+</html>

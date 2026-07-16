@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | PHM HCC</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        .page-header {
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+        }
+
+        .page-header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .gallery {
+            padding: 70px 8%;
+            background: #f8f9fa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+            background: #fff;
+            transition: .3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: .4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .caption {
+            padding: 18px;
+            text-align: center;
+        }
+
+        .caption h3 {
+            color: #003366;
+            margin-bottom: 8px;
+        }
+
+        .caption p {
+            color: #666;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <img src="../Images/images.jpg" alt="Logo">
+
+                <h2>PHM HCC</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="page-header">
+
+        <h1>Church Gallery</h1>
+
+        <p>
+            Moments of Worship, Fellowship, and Ministry
+        </p>
+
+    </section>
+
+    <section class="gallery">
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Sunday Worship">
+
+                <div class="caption">
+                    <h3>Sunday Worship</h3>
+                    <p>Worship service with the congregation.</p>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Choir">
+
+                <div class="caption">
+                    <h3>Choir Ministry</h3>
+                    <p>Praise and worship through music.</p>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Youth">
+
+                <div class="caption">
+                    <h3>Youth Fellowship</h3>
+                    <p>Young people growing in Christ.</p>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Prayer">
+
+                <div class="caption">
+                    <h3>Prayer Meeting</h3>
+                    <p>Seeking God's presence together.</p>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Children">
+
+                <div class="caption">
+                    <h3>Children's Ministry</h3>
+                    <p>Teaching children God's Word.</p>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Outreach">
+
+                <div class="caption">
+                    <h3>Community Outreach</h3>
+                    <p>Serving and supporting our community.</p>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Conference">
+
+                <div class="caption">
+                    <h3>Annual Conference</h3>
+                    <p>Special conference and revival meetings.</p>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Baptism">
+
+                <div class="caption">
+                    <h3>Baptism Service</h3>
+                    <p>Celebrating new life in Christ.</p>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="../Images/images.jpg" alt="Christmas">
+
+                <div class="caption">
+                    <h3>Christmas Celebration</h3>
+                    <p>Celebrating the birth of Jesus Christ.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h2>PHM HCC</h2>
+
+        <p>Pentecostal Holiness Mission Hope Christian Church</p>
+
+        <div class="social">
+
+            <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <p>&copy; 2026 PHM HCC. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="../JS/script.js"></script>
+
+</body>
+
+</html>
