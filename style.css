@@ -135,7 +135,7 @@ header{
     rgba(0,0,0,.6)
     ),
 
-    url("../Images/church.jpg");
+    url("./Images/church.jpg");
 
     background-size:cover;
     background-position:center;
