@@ -19,9 +19,8 @@ html{
 body{
     background:#ffffff;
     color:#222;
+    
 }
-
-
 
 /* =========================
    NAVBAR
@@ -114,104 +113,64 @@ header{
 
 }
 
-
-
-
-
-
 /* =========================
- HERO SECTION
- ========================= */
+   HERO SECTION
+========================= */
 
-
-.hero{
-
-    height:90vh;
-
+.hero {
+    min-height: 90vh;
     background:
+        linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+        url("./Images/church-background.jpg") center center / cover no-repeat;
 
-    linear-gradient(
-    rgba(0,0,0,.6),
-    rgba(0,0,0,.6)
-    ),
-
-    url("./Images/church.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    color:white;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 80px 20px;
 }
 
-
-
-.hero-content h1{
-
-    font-size:45px;
-    margin-bottom:15px;
-
+.hero-content {
+    max-width: 900px;
+    color: white;
+    z-index: 2;
 }
 
-
-
-.hero-content h2{
-
-    color:#FFD700;
-    font-size:35px;
-
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-
-.hero-content p{
-
-    font-size:20px;
-    margin:20px;
-
+.hero-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-
-
-.btn{
-
-    display:inline-block;
-
-    background:#FFD700;
-
-    color:#003366;
-
-    padding:12px 30px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-    transition:.3s;
-
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
 }
 
-
-
-.btn:hover{
-
-    background:white;
-
+.hero-content .btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #d4a017;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-
-
-
-
-
+.hero-content .btn:hover {
+    background: #b8860b;
+    transform: translateY(-2px);
+}
 
 /* =========================
 WELCOME
@@ -222,6 +181,10 @@ WELCOME
 
     padding:70px 10%;
     text-align:center;
+        /* min-height: 90vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+        url("./Images/church-background.jpg") center center / cover no-repeat; */
 
 }
 
@@ -229,9 +192,7 @@ WELCOME
 .welcome h2{
 
     color:#003366;
-
     font-size:35px;
-
     margin-bottom:20px;
 
 }
@@ -240,14 +201,9 @@ WELCOME
 .welcome p{
 
     line-height:1.8;
-
     font-size:18px;
 
 }
-
-
-
-
 
 
 /* =========================
@@ -266,7 +222,6 @@ SERVICES
 }
 
 
-
 .services h2{
 
     color:#003366;
@@ -274,7 +229,6 @@ SERVICES
     font-size:35px;
 
 }
-
 
 
 .service-container{
@@ -290,8 +244,6 @@ SERVICES
 
 }
 
-
-
 .service-card{
 
     background:white;
@@ -306,8 +258,6 @@ SERVICES
     transition:.3s;
 
 }
-
-
 
 .service-card:hover{
 
@@ -383,12 +333,6 @@ MISSION VISION
 }
 
 
-
-
-
-
-
-
 /* =========================
 PASTOR
 ========================= */
@@ -407,7 +351,6 @@ PASTOR
 }
 
 
-
 .pastor img{
 
     width:300px;
@@ -419,8 +362,6 @@ PASTOR
     border-radius:50%;
 
 }
-
-
 
 .pastor h2{
 
@@ -492,11 +433,6 @@ EVENTS
     color:#003366;
 
 }
-
-
-
-
-
 
 /* =========================
 BIBLE VERSE
@@ -596,9 +532,6 @@ BIBLE VERSE
 }
 
 
-
-
-
 /* =========================
 FOOTER
 ========================= */
@@ -661,10 +594,6 @@ footer h2{
 .social a:hover {
     transform: scale(1.2);
 }
-
-
-
-
 
 
 /* =========================
@@ -813,4 +742,47 @@ section.show{
 
 }
 
+}
+
+/* About profile section */
+.about-profile{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    padding:60px 10%;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.about-profile .profile-img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    flex-shrink:0;
+}
+
+.about-profile .profile-text h3{
+    color:#003366;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.about-profile .profile-text p{
+    font-size:18px;
+    line-height:1.8;
+    color:#333;
+}
+
+@media(max-width:900px){
+    .about-profile{
+        flex-direction:column;
+        padding:40px 6%;
+        text-align:center;
+    }
+    .about-profile .profile-img{
+        width:200px;
+        height:200px;
+    }
 }
