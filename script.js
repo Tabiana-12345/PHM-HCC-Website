@@ -6,6 +6,14 @@
 const menu = document.querySelector(".menu");
 const navLinks = document.querySelector(".nav-links");
 
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+document.querySelectorAll(".nav-links a").forEach(link => {
+    if (new URL(link.href).pathname.split("/").pop() === currentPage) {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+    }
+});
+
 menu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
